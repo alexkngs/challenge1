@@ -1,0 +1,130 @@
+/* color palette
+#0C3756 - blue
+#E5942C - orange
+#5E99A0 - cyan
+#3F5D75 - bluegrey
+#D45948 - redorange
+#707070 - light grey
+
+*/
+
+/* main
+-----------------------*/
+html, body{
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+main{
+	background-color: #707070;
+}
+
+h1, h2{
+	font-family: 'Rubik', sans-serif;
+	font-weight:500;
+	font-size: 18px;
+	color:#E5942C;
+}
+
+p, label, span, div{
+	font-size:14px;
+	color: #D45948;
+	font-family: 'Rubik', sans-serif;
+}
+
+
+
+
+
+.bg{
+	background:url(../images/bg.png) no-repeat;
+	height:290px;
+	position: relative;
+	background-size: cover;
+	width: 100%;
+}
+
+.wheel{
+	height:55%;
+	width: 55%;
+	float:right;
+	padding-right: 90px;
+	padding-top: 5px;
+}
+
+.container{
+	height:30px;
+	width:450px;
+	border:5px solid white; 
+}
+
+
+/* ship parameters
+-----------------------*/
+.fuel {
+	display:block;
+	background-color: #303030;
+	max-width: 40%;
+	padding: 20px;
+} 
+
+#flevel{
+	height: 100%;
+	background-color: #D45948;
+}
+
+/* ship environment
+-----------------------*/
+.distance{
+	display: block;
+	background-color: #303030;
+	max-width: 40%;
+	padding: 20px;
+}
+
+#dtrav{
+	height: 100%;
+	color:#D45948;
+	text-align: center;
+	padding-top:7px;
+	font-size: 14px;
+}
+
+/* supplies
+-----------------------*/
+.food {
+	display: block;
+	background-color:#303030;
+	max-width: 40%;
+	padding: 20px;
+}
+
+#folevel{
+	height: 100%;
+	background-color: #D45948;
+}
+
+/* metrics
+-----------------------*/
+.miles{
+	display: block;
+	background-color: #303030;
+	max-width: 40%;
+	padding: 20px;
+}
+
+#mileconv{
+	height: 100%;
+}
+
+input::placeholder{
+	color:white;
+	font-size:14px;
+	color: #D45948;
+	font-family: 'Rubik', sans-serif;
+
+}
+
+
+

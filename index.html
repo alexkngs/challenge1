@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title> dashboard </title>
+	<link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+
+	<!-- // main content -->
+	<main>
+
+		<section class="bg">
+		</section>
+
+		<section class="wheel">
+			<img src="images/wheel.svg" alt="wheel" align="right" class="wheel">
+		</section>
+
+
+<!-- // ship parameters -->
+<section class="fuel">
+	<h1> fuel level </h1>
+
+	<div class="container">
+
+		<div id="flevel">
+		</div>
+
+	</div>
+
+</section>
+
+<!-- // ship environment -->
+<section class="distance">
+	<h1> distance travelled (earth miles) </h1>
+<div class="container">
+		
+		<div id="dtrav">
+		</div>
+
+	</div>
+	
+
+</section>
+
+<!-- // supplies -->
+<section class="food">
+	<h1> food supply </h1>
+
+	<div class="container">
+		
+		<div id="folevel">
+		</div>
+
+	</div>
+
+</section>
+
+<!-- // metrics -->
+<section class="miles">
+	<h1> mars miles to earth miles converter </h1>
+
+		
+		<div id="mileconv">
+			<p>
+  <label>Earth miles: </label>
+  <input id="inputEM" type="number" placeholder="enter earth miles" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p> Mars Miles: <span id="outputMarsMiles"></span></p>
+		</div>
+
+
+
+</section>
+
+
+	</main>
+	
+<script type="text/javascript">
+	fuel();
+	food();
+	distance();
+	LengthConverter(valNum);
+</script>
+
+</body>
+</html>
